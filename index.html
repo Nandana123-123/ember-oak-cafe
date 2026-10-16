@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Discover artisan coffee, fresh pastries, and slow mornings at Ember & Oak Café.">
+
+  <title>Ember & Oak Café | Coffee, Crafted Slowly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <a href="#home" class="logo">
+        EMBER <span>&</span> OAK
+        <small>COFFEE HOUSE</small>
+      </a>
+
+      <button class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Visit Us</a></li>
+      </ul>
+
+      <a href="#menu" class="btn btn-dark nav-cta">
+        Explore Menu ↗
+      </a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <p class="eyebrow">YOUR NEIGHBOURHOOD COFFEE HOUSE</p>
+
+        <h1>Good coffee.<br>
+          <em>Better moments.</em>
+        </h1>
+
+        <p class="hero-description">
+          Thoughtfully brewed coffee, fresh-from-the-oven treats,
+          and a little space to slow down.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">
+            Discover Our Menu ↗
+          </a>
+
+          <a href="#story" class="text-link">
+            Our story <span>→</span>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          BREWED FRESH. SERVED WITH LOVE.
+        </div>
+      </div>
+
+      <div class="hero-side-label">SLOW MORNINGS START HERE</div>
+    </section>
+
+    <!-- Intro strip -->
+    <section class="intro-strip">
+      <div class="container intro-inner">
+        <p>Specialty coffee</p>
+        <span>✳</span>
+        <p>Freshly baked daily</p>
+        <span>✳</span>
+        <p>Made for lingering</p>
+        <span>✳</span>
+        <p>Your daily ritual</p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="story section-padding" id="story">
+      <div class="container story-grid">
+
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85"
+            alt="Warm and welcoming coffee shop interior"
+            loading="lazy">
+
+          <div class="image-caption">
+            <span>01 / OUR LITTLE CORNER</span>
+            <span>Est. 2026</span>
+          </div>
+        </div>
+
+        <div class="story-content">
+          <p class="eyebrow">A LITTLE ABOUT US</p>
+
+          <h2>More than coffee.<br>
+            <em>A feeling.</em>
+          </h2>
+
+          <p>
+            We believe the best moments aren't rushed. They're found
+            in the first sip of coffee, a shared pastry, or a
+            conversation that lasts a little longer.
+          </p>
+
+          <p>
+            Ember & Oak is a concept café built around honest
+            ingredients, carefully crafted drinks, and the simple
+            pleasure of feeling at home.
+          </p>
+
+          <a href="#contact" class="underlined-link">
+            Come say hello <span>↗</span>
+          </a>
+
+          <div class="story-stat">
+            <div>
+              <strong>01</strong>
+              <span>Good beans</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>Fresh bakes</span>
+            </div>
+            <div>
+              <strong>∞</strong>
+              <span>Good moments</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MADE WITH A LITTLE EXTRA LOVE</p>
+            <h2>Our <em>favourites.</em></h2>
+          </div>
+
+          <p>
+            Your daily coffee, your weekend treat,
+            or something new to fall in love with.
+          </p>
+        </div>
+
+        <div class="menu-filters" aria-label="Filter menu">
+          <button class="filter-btn active" data-filter="all"
+            aria-pressed="true">All favourites</button>
+          <button class="filter-btn" data-filter="coffee"
+            aria-pressed="false">Coffee</button>
+          <button class="filter-btn" data-filter="food"
+            aria-pressed="false">From the oven</button>
+        </div>
+
+        <div class="menu-grid">
+
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+                alt="Freshly prepared iced coffee"
+                loading="lazy">
+              <span class="menu-tag">CROWD FAVOURITE</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Iced Latte</h3>
+                <span>₹180</span>
+              </div>
+              <p>Espresso, chilled milk, and plenty of ice.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80"
+                alt="A freshly brewed cup of coffee"
+                loading="lazy">
+            </div>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Classic Cappuccino</h3>
+                <span>₹150</span>
+              </div>
+              <p>Rich espresso under a cloud of silky foam.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="food">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+                alt="Freshly baked golden croissants"
+                loading="lazy">
+              <span class="menu-tag">FRESHLY BAKED</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Butter Croissant</h3>
+                <span>₹120</span>
+              </div>
+              <p>Golden, flaky layers with a buttery centre.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="food">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                alt="Chocolate cake ready to serve"
+                loading="lazy">
+            </div>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Chocolate Cake</h3>
+                <span>₹200</span>
+              </div>
+              <p>Decadent chocolate layers for your sweet tooth.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80"
+                alt="Creamy latte in a ceramic cup"
+                loading="lazy">
+            </div>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Vanilla Latte</h3>
+                <span>₹190</span>
+              </div>
+              <p>Velvety steamed milk with a hint of vanilla.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="food">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80"
+                alt="Fresh artisan bread"
+                loading="lazy">
+            </div>
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Artisan Toast</h3>
+                <span>₹160</span>
+              </div>
+              <p>Rustic toasted bread with delicious toppings.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu-note">
+          Demo menu and prices — customise these for your client.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Quote banner -->
+    <section class="quote-banner">
+      <div class="quote-content">
+        <p class="eyebrow">A REMINDER TO SLOW DOWN</p>
+        <h2>Life happens.<br>
+          <em>Coffee helps.</em>
+        </h2>
+        <a href="#contact" class="btn btn-light">Find Your Corner ↗</a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LITTLE MOMENTS, BIG COMFORT</p>
+            <h2>Life at <em>Ember & Oak.</em></h2>
+          </div>
+          <p>Come for the coffee. Stay for the atmosphere.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80"
+            alt="Coffee being prepared by a barista"
+            loading="lazy">
+
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+            alt="Coffee and a relaxed morning"
+            loading="lazy">
+
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80"
+            alt="Cosy café seating and ambience"
+            loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-copy">
+          <p class="eyebrow">WE'LL SAVE YOU A SEAT</p>
+          <h2>Your next favourite<br>
+            <em>corner awaits.</em>
+          </h2>
+
+          <p>
+            Drop by for your morning pick-me-up or an unhurried
+            afternoon. There's always room for one more.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <span class="detail-icon">⌖</span>
+              <div>
+                <strong>Find us</strong>
+                <p>123 Coffee Lane, Your City</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="detail-icon">◷</span>
+              <div>
+                <strong>Opening hours</strong>
+                <p>Monday – Sunday: 9 AM – 9 PM</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="detail-icon">✉</span>
+              <div>
+                <strong>Say hello</strong>
+                <p>hello@example.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <p class="eyebrow">DROP US A NOTE</p>
+          <h3>Let's connect.</h3>
+
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text"
+            placeholder="What should we call you?" required>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+            placeholder="you@example.com" required>
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="Tell us what's on your mind..." required></textarea>
+
+          <button type="submit" class="btn btn-dark form-submit">
+            Send Your Message ↗
+          </button>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <a href="#home" class="logo footer-logo">
+        EMBER <span>&</span> OAK
+        <small>COFFEE HOUSE</small>
+      </a>
+
+      <p>Good coffee. Better moments.</p>
+
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+
+    </div>
+
+    <div class="container copyright">
+      <p>© <span id="year"></span> Ember & Oak Café. Demo website.</p>
+      <p>Crafted with care, one cup at a time.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
